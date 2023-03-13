@@ -1,0 +1,15 @@
+Suppliers (Manufacturers) -> Categories -> Model + Fuel Types
+Rental (Buyers) <- Suppliers (Producers)
+
+Manufacturers -> Publish products and rental companies can subscribe
+Rental companies can subscribe to category
+
+Producer-Supplier -> publish, subscribe, and unsubscribe
+
+• publish, [producer], [product category], [model type], [fuel type]
+• subscribe, [buyer], [product category]
+• unsubscribe, [buyer], [product category]
+
+No case sensitive 
+No error message
+Duplicate subscription are dropped silently
